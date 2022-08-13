@@ -33,5 +33,7 @@ ExDuckSmartCell documentation can be found at
 
 Add this package to your Livebook setup section. Then you'll have an "ExDuck" smart cell available.
 
+Query for a given topic and the results will be displayed in markdown directly in your Livebook and the underlying data map will be assigned to the given variable name.
+
 ![ExDuck smart cell showing a query and results for "Elixir Language"](https://github.com/sdball/ex_duck_smart_cell/raw/main/example.png)
 
