@@ -33,5 +33,5 @@ ExDuckSmartCell documentation can be found at
 
 Add this package to your Livebook setup section. Then you'll have an "ExDuck" smart cell available.
 
-![ExDuck smart cell showing a query and results for "Elixir Language"](./example.png)
+![ExDuck smart cell showing a query and results for "Elixir Language"](https://github.com/sdball/ex_duck_smart_cell/raw/main/example.png)
 
