@@ -9,14 +9,16 @@ defmodule ExDuckSmartCellTest do
     {_kino, source} = start_smart_cell!(ExDuckSmartCell, %{})
 
     assert source == """
-           results = ExDuck.answer!(\"\")
-           results |> ExDuck.to_markdown() |> Kino.Markdown.new()\
+           api_result = ExDuck.query!(\"\")
+           answer = api_result |> ExDuck.understand()
+           answer |> ExDuck.to_markdown() |> Kino.Markdown.new()\
            """
   end
 
   test "uses topic and variable from attrs" do
     attrs = %{
-      "variable" => "query_results",
+      "api_result_variable" => "query_result",
+      "answer_variable" => "answer",
       "topic" => "Elixir Language"
     }
 
@@ -24,8 +26,9 @@ defmodule ExDuckSmartCellTest do
 
     assert source ==
              """
-             query_results = ExDuck.answer!(\"Elixir Language\")
-             query_results |> ExDuck.to_markdown() |> Kino.Markdown.new()\
+             query_result = ExDuck.query!(\"Elixir Language\")
+             answer = query_result |> ExDuck.understand()
+             answer |> ExDuck.to_markdown() |> Kino.Markdown.new()\
              """
   end
 end
