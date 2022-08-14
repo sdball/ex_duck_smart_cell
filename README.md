@@ -9,7 +9,7 @@ dependencies in your Livebook setup section:
 
 ```elixir
 Mix.install([
-  {:ex_duck_smart_cell, "~> 0.1.0"}
+  {:ex_duck_smart_cell, "~> 0.1.1"}
 ])
 ```
 
