@@ -159,3 +159,11 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+#topic-input {
+  font-size: 1.5rem;
+  color: #111;
+}
+
+#variable-input {
+  opacity: 0.8;
+}
