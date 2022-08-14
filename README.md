@@ -19,7 +19,7 @@ dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:ex_duck_smart_cell, "~> 0.1.0"}
+    {:ex_duck_smart_cell, "~> 0.1.1"}
   ]
 end
 ```
