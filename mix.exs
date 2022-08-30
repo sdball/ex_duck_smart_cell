@@ -28,7 +28,7 @@ defmodule ExDuckSmartCell.MixProject do
   defp deps do
     [
       {:kino, "~> 0.6.2"},
-      {:ex_duck, "~> 0.1.1"},
+      {:ex_duck, "~> 0.1.2"},
       {:ex_doc, "~> 0.27", only: :dev, runtime: false},
     ]
   end
