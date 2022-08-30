@@ -1,7 +1,7 @@
 defmodule ExDuckSmartCell.MixProject do
   use Mix.Project
 
-  @version "0.1.2"
+  @version "0.1.3"
   @github "https://github.com/sdball/ex_duck_smart_cell"
 
   def project do

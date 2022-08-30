@@ -1,9 +1,9 @@
 defmodule ExDuckSmartCell do
   @moduledoc false
 
-  use Kino.JS, assets_path: "lib/assets/ex_duck_smart_cell_with_variables"
+  use Kino.JS, assets_path: "lib/assets/ex_duck_smart_cell"
   use Kino.JS.Live
-  use Kino.SmartCell, name: "ExDuck with variables"
+  use Kino.SmartCell, name: "ExDuck"
 
   @impl true
   def init(attrs, ctx) do
